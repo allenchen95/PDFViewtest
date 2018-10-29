@@ -1,0 +1,106 @@
+@charset "utf-8";
+/* CSS Document */
+html{
+    padding: 0;
+    margin: 0;
+}
+body{
+    background-color: #2b4a68;
+    margin: 0;
+}
+.bg{
+    position: fixed;
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+}
+.title{
+    text-align: center;
+    vertical-align: -webkit-baseline-middle;
+    margin-top: 60px;
+    margin-bottom: 30px;
+    float: left;
+    width: 100%;
+}
+.title img{
+    padding-left: 10%;
+    padding-right: 10%;
+    width: 80%;
+    max-width: 874px;
+}
+.info section{
+    text-align: center;
+    vertical-align: -webkit-baseline-middle;
+    margin-bottom: 100px;
+    padding-left: 10%;
+    padding-right: 10%;
+}
+.info section p{
+    font-size: 1.1em;
+    color: #eeece1;
+    line-height: 40px;
+    letter-spacing:0.05em;
+}
+.wrapper{
+    padding: 0 10%;
+}
+.col{
+    float: left;
+    width: 27.33%;
+    min-height: 540px;
+    background: #faf7eb;
+    margin-left:3%;
+    margin-right:3%;
+    position: relative;
+}
+.col_imgbox{
+    margin-left: 6%;
+    margin-right: 6%;
+    margin-top:6%;
+    width: 88%;
+}
+.col_imgbox a{
+    width: 100%;
+    overflow: hidden;
+}
+.col_imgbox a img{
+    width: 100%;
+}
+.col_titlebox{
+
+    display: block;
+}
+.col_titlebox p{
+    height: 80px;
+    overflow:hidden;
+    margin:6% 12% 6% 12%;
+    text-align: center;
+    vertical-align: -webkit-baseline-middle;
+    font-size: 1.6em;
+    line-height: 40px;
+    color: #2b4a68;
+}
+.col_btn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.col_imgbox a img{
+    opacity: 1;
+    transition: all 0.7s ease;
+}
+.col_imgbox a  img:hover{
+    opacity: 0.8;
+    transition: all 0.5s ease;
+}
+@media(max-width:1000px){
+    .col{
+        float: none;
+        width:auto;
+        min-height: 560px;
+    }
+    .col_imgbox{
+        padding-top:20px;
+    }
+}
